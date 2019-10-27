@@ -40,35 +40,39 @@
         app:layout_constraintTop_toBottomOf="@+id/banner" />
 
     <ImageView
-        android:id="@+id/camera_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/fav_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_logo"
-        app:srcCompat="@drawable/camerabutton" />
-
-    <ImageView
         android:id="@+id/fav_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/inbox_btn"
-        app:layout_constraintEnd_toEndOf="@+id/camera_btn"
-        app:layout_constraintStart_toStartOf="@+id/camera_btn"
-        app:layout_constraintTop_toBottomOf="@+id/camera_btn"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inbox_btn"
+        app:layout_constraintEnd_toStartOf="@+id/inbox_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/camera_btn"
+        app:layout_constraintTop_toTopOf="@+id/inbox_btn"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/favoritebutton" />
+
+    <ImageView
+        android:id="@+id/camera_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fav_btn"
+        app:layout_constraintEnd_toStartOf="@+id/fav_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fav_btn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/camerabutton" />
 
     <ImageView
         android:id="@+id/inbox_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/fav_btn"
-        app:layout_constraintStart_toStartOf="@+id/fav_btn"
-        app:layout_constraintTop_toBottomOf="@+id/fav_btn"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fav_btn"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         app:srcCompat="@drawable/inboxbutton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
